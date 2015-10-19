@@ -116,9 +116,9 @@ var WebAPI = {
                 } else {
                     throw new TypeError('The URI does not belong to a track.');
                 }
-            } else if (uri.indexOf('open.spotify.com/') !== -1) {
-                if (uri.indexOf('open.spotify.com/track/') !== -1) {
-                    return uri.split('open.spotify.com/track/')[1];
+            } else if (uri.indexOf('spotify.com/') !== -1) {
+                if (uri.indexOf('spotify.com/track/') !== -1) {
+                    return uri.split('spotify.com/track/')[1];
                 } else {
                     throw new TypeError('The URI does not belong to a track.');
                 }
